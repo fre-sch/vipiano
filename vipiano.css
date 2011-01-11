@@ -1,0 +1,77 @@
+#root {
+}
+
+.piano {
+	float: left;
+	position: relative;
+	/* font-size equals height of piano key*/
+	font-size: 160px;
+	margin: 0.05em 0 0.07em 0;
+	background: #ccc;
+}
+
+.piano-key-white:first-child {
+	margin-left: 1px;
+}
+
+.piano-key-white {
+	position: relative;
+	z-index: 0;
+	float: left;
+	width: 0.2em;
+	height: 1em;
+	margin-top: 1px;
+	margin-right: 1px;
+	background-color: #f6f6f6;
+	border-bottom: 0.05em solid #ddd;
+}
+
+.piano-key-black {
+	position: relative;
+	z-index: 10;
+	float: left;
+	width: 0.14em;
+	height: 0.7em;
+	margin-top: 1px;
+	margin-left: -0.07em;
+	margin-right: -0.07em;
+	background-color: #303030;
+	border-bottom: 0.05em solid #000;
+	outline: 1px solid #ddd;
+}
+
+.piano-key-name {
+	display: none;
+	position: absolute;
+	bottom: -1.5em;
+	width: 1.75em;
+	text-align: center;
+	font-weight: bold;
+	font-size: 0.1em;
+	opacity: 0.7;
+
+	border: 1px solid #CCC;
+	border-radius: 4px;
+	background: #fff;
+}
+
+.piano .piano-key:hover .piano-key-name,
+.piano .chord .piano-key-name,
+.piano .scale .piano-key-name {
+	display: block;
+}
+
+.piano .scale {
+	background-color: #80A0FF;
+	border-color: #6080DF;
+}
+
+.piano .chord {
+	background-color: #FFA080;
+	border-color: #DF8060;
+}
+
+.piano .piano-key:hover {
+	background-color: #A0E040;
+	border-color: #80C020;
+}
