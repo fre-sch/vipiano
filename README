@@ -1,0 +1,8 @@
+There used to be a website displaying a piano keyboard (I forgot the name and
+URL). This website would display various chords and scales highlighted on this
+piano keyboard. It was really helpful for hobby musicians like myself. But
+unfortunately it was coded with Internet Explorer 6 in mind and no longer works
+in any browser (because IE6 is dead).
+
+This is my attempt to recreate this very helpful page using nothing but
+standards compliant HTML5, CSS2/3 and Javascript.
